@@ -9,6 +9,10 @@ app.get('/egor', function (req, res) {
   res.send('Hello Egor!');
 });
 
+app.get('/about', function (req, res) {
+  res.send('about')
+});
+
 var server = app.listen(3000, function () {
   var host = server.address().address;
   var port = server.address().port;
